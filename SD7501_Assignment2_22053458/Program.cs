@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 namespace SD7501_Assignment2_22053458
 {
     public class Program
@@ -8,6 +9,9 @@ namespace SD7501_Assignment2_22053458
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<Data.ApplicationDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 
