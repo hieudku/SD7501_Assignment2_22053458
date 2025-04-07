@@ -13,8 +13,12 @@ namespace SD7501_Assignment2_22053458.Controllers
         }
         public IActionResult Index()
         {
-            List<Category> objCategoryList = _db.Category.ToList();
+            List<ParkingSlots> objCategoryList = _db.Category.ToList();
             return View(objCategoryList);
+        }
+        public IActionResult Create()
+        {
+            return View();
         }
     }
 }
