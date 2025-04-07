@@ -15,17 +15,17 @@ namespace SD7501_Assignment2_22053458.Migrations
         {
             migrationBuilder.RenameColumn(
                 name: "Name",
-                table: "Category",
+                table: "ParkingSlots",
                 newName: "SlotCode");
 
             migrationBuilder.RenameColumn(
                 name: "Description",
-                table: "Category",
+                table: "ParkingSlots",
                 newName: "Location");
 
             migrationBuilder.AddColumn<bool>(
                 name: "IsVacant",
-                table: "Category",
+                table: "ParkingSlots",
                 type: "bit",
                 nullable: false,
                 defaultValue: false);
@@ -46,57 +46,57 @@ namespace SD7501_Assignment2_22053458.Migrations
                 {
                     table.PrimaryKey("PK_Bookings", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Bookings_Category_ParkingSlotId",
+                        name: "FK_Bookings_ParkingSlots_ParkingSlotId",
                         column: x => x.ParkingSlotId,
-                        principalTable: "Category",
+                        principalTable: "ParkingSlots",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.UpdateData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 1,
                 columns: new[] { "IsVacant", "Location", "SlotCode" },
                 values: new object[] { true, "Kensington Avenue", "K1" });
 
             migrationBuilder.UpdateData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 2,
                 columns: new[] { "IsVacant", "Location", "SlotCode" },
                 values: new object[] { true, "Kensington Avenue", "K2" });
 
             migrationBuilder.UpdateData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 3,
                 columns: new[] { "IsVacant", "Location", "SlotCode" },
                 values: new object[] { true, "Kensington Avenue", "K3" });
 
             migrationBuilder.UpdateData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 4,
                 columns: new[] { "IsVacant", "Location", "SlotCode" },
                 values: new object[] { true, "Kensington Avenue", "K4" });
 
             migrationBuilder.UpdateData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 5,
                 columns: new[] { "IsVacant", "Location", "SlotCode" },
                 values: new object[] { true, "Kensington Avenue", "K5" });
 
             migrationBuilder.UpdateData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 6,
                 columns: new[] { "IsVacant", "Location", "SlotCode" },
                 values: new object[] { true, "Kensington Avenue", "K6" });
 
             migrationBuilder.InsertData(
-                table: "Category",
+                table: "ParkingSlots",
                 columns: new[] { "Id", "IsVacant", "Location", "SlotCode" },
                 values: new object[,]
                 {
@@ -157,266 +157,266 @@ namespace SD7501_Assignment2_22053458.Migrations
                 name: "Bookings");
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 7);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 8);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 9);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 10);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 11);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 12);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 13);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 14);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 15);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 16);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 17);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 18);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 19);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 20);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 21);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 22);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 23);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 24);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 25);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 26);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 27);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 28);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 29);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 30);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 31);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 32);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 33);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 34);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 35);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 36);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 37);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 38);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 39);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 40);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 41);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 42);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 43);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 44);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 45);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 46);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 47);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 48);
 
             migrationBuilder.DropColumn(
                 name: "IsVacant",
-                table: "Category");
+                table: "ParkingSlots");
 
             migrationBuilder.RenameColumn(
                 name: "SlotCode",
-                table: "Category",
+                table: "ParkingSlots",
                 newName: "Name");
 
             migrationBuilder.RenameColumn(
                 name: "Location",
-                table: "Category",
+                table: "ParkingSlots",
                 newName: "Description");
 
             migrationBuilder.UpdateData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 1,
                 columns: new[] { "Description", "Name" },
                 values: new object[] { "Inside of the car", "Interior" });
 
             migrationBuilder.UpdateData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 2,
                 columns: new[] { "Description", "Name" },
                 values: new object[] { "Outside of the car", "Exterior" });
 
             migrationBuilder.UpdateData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 3,
                 columns: new[] { "Description", "Name" },
                 values: new object[] { "Headlights and LED", "Lighting" });
 
             migrationBuilder.UpdateData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 4,
                 columns: new[] { "Description", "Name" },
                 values: new object[] { "To stop the car", "Brakes & Suspension" });
 
             migrationBuilder.UpdateData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 5,
                 columns: new[] { "Description", "Name" },
                 values: new object[] { "Waste coming out of the car", "Exhaust" });
 
             migrationBuilder.UpdateData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 6,
                 columns: new[] { "Description", "Name" },

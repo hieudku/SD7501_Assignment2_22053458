@@ -12,8 +12,8 @@ using SD7501_Assignment2_22053458.Data;
 namespace SD7501_Assignment2_22053458.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250407020846_ParkingBookingTablesCreated")]
-    partial class ParkingBookingTablesCreated
+    [Migration("20250407021851_RenameIntoParkingSlotsController")]
+    partial class RenameIntoParkingSlotsController
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

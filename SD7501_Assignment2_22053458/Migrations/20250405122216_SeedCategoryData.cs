@@ -7,13 +7,13 @@
 namespace SD7501_Assignment2_22053458.Migrations
 {
     /// <inheritdoc />
-    public partial class SeedCategoryData : Migration
+    public partial class SeedParkingSlotsData : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.InsertData(
-                table: "Category",
+                table: "ParkingSlots",
                 columns: new[] { "Id", "Description", "Name" },
                 values: new object[,]
                 {
@@ -30,32 +30,32 @@ namespace SD7501_Assignment2_22053458.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 1);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 2);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 3);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 4);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 5);
 
             migrationBuilder.DeleteData(
-                table: "Category",
+                table: "ParkingSlots",
                 keyColumn: "Id",
                 keyValue: 6);
         }

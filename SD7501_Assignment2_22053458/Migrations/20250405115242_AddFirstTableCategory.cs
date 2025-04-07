@@ -5,13 +5,13 @@
 namespace SD7501_Assignment2_22053458.Migrations
 {
     /// <inheritdoc />
-    public partial class AddFirstTableCategory : Migration
+    public partial class AddFirstTableParkingSlots : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Category",
+                name: "ParkingSlots",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -21,7 +21,7 @@ namespace SD7501_Assignment2_22053458.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Category", x => x.Id);
+                    table.PrimaryKey("PK_ParkingSlots", x => x.Id);
                 });
         }
 
@@ -29,7 +29,7 @@ namespace SD7501_Assignment2_22053458.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Category");
+                name: "ParkingSlots");
         }
     }
 }

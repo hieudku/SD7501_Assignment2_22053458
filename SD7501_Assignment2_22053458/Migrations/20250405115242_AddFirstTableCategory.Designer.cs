@@ -11,8 +11,8 @@ using SD7501_Assignment2_22053458.Data;
 namespace SD7501_Assignment2_22053458.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250405115242_AddFirstTableCategory")]
-    partial class AddFirstTableCategory
+    [Migration("20250405115242_AddFirstTableParkingSlots")]
+    partial class AddFirstTableParkingSlots
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace SD7501_Assignment2_22053458.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("SD7501_Assignment2_22053458.Models.Category", b =>
+            modelBuilder.Entity("SD7501_Assignment2_22053458.Models.ParkingSlots", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -41,7 +41,7 @@ namespace SD7501_Assignment2_22053458.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("ParkingSlots");
                 });
 #pragma warning restore 612, 618
         }

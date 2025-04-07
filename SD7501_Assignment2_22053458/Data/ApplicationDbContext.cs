@@ -9,7 +9,7 @@ namespace SD7501_Assignment2_22053458.Data
             : base(options)
         {
         }
-        public DbSet<ParkingSlots> Category { get; set; } = default!;
+        public DbSet<ParkingSlots> ParkingSlots { get; set; } = default!;
 
         // Seed parking slots data
         protected override void OnModelCreating(ModelBuilder modelBuilder)

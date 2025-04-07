@@ -73,7 +73,7 @@ namespace SD7501_Assignment2_22053458.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("ParkingSlots");
 
                     b.HasData(
                         new

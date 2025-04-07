@@ -4,17 +4,17 @@ using SD7501_Assignment2_22053458.Models;
 
 namespace SD7501_Assignment2_22053458.Controllers
 {
-    public class CategoryController : Controller
+    public class ParkingSlotsController : Controller
     {
         private readonly ApplicationDbContext _db;
-        public CategoryController(ApplicationDbContext db)
+        public ParkingSlotsController(ApplicationDbContext db)
         {
             _db = db;
         }
         public IActionResult Index()
         {
-            List<ParkingSlots> objCategoryList = _db.Category.ToList();
-            return View(objCategoryList);
+            List<ParkingSlots> objParkingSlotsList = _db.ParkingSlots.ToList();
+            return View(objParkingSlotsList);
         }
         public IActionResult Create()
         {
